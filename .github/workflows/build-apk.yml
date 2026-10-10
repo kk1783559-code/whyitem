@@ -20,7 +20,9 @@ jobs:
         cache: 'npm'
 
     - name: Install Dependencies
-      run: npm install
+      run: |
+        npm install
+        npm install --save-dev typescript
 
     - name: Set up JDK 17
       uses: actions/setup-java@v5
